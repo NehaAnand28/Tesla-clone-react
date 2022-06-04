@@ -34,8 +34,15 @@ function Home() {
         rightBtnTxt="Existing Inventory"
       />
       <Section
-        title="Lowest Cost Solar Panels"
-        description="Money-back guarantee"
+        title="Solar Panels"
+        description="Lowest Cost Solar Panels in America"
+        backgroundImg="solar-panel.jpg"
+        leftBtnTxt="Order now"
+        rightBtnTxt="Learn more"
+      />
+      <Section
+        title="Solar Roof"
+        description="Produce Clean Energy From Your Roof"
         backgroundImg="solar-roof.jpg"
         leftBtnTxt="Order now"
         rightBtnTxt="Learn more"
