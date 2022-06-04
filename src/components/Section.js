@@ -1,20 +1,40 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Section({ title, description, leftBtnTxt, rightBtnTxt,backgroundImg }) {
+  
+    useEffect(() => {
+      AOS.init();
+    }, []);
+  
   return (
     <Wrap bgImage={backgroundImg}>
       <ItemText>
-        <h1>{title}</h1>
-        <p>{description}</p>
+        <h1
+          data-aos="fade-up"
+          data-aos-duration="600"
+          data-aos-easing="ease-in-sine"
+        >
+          {title}
+        </h1>
+        <p
+          data-aos="fade-up"
+          aos-delay="500"
+          data-aos-duration="600"
+          data-aos-easing="ease-in-sine"
+        >
+          {description}
+        </p>
       </ItemText>
       <Buttons>
-        <ButtonGroup>
+        <ButtonGroup data-aos="fade-up" aos-delay="200">
           <LeftButton>{leftBtnTxt}</LeftButton>
-          {rightBtnTxt && 
+          {rightBtnTxt && (
             // only if rightBtnTxt exists
-             <RightButton>{rightBtnTxt}</RightButton>
-          }
+            <RightButton>{rightBtnTxt}</RightButton>
+          )}
         </ButtonGroup>
         <DownArrow src="./images/down-arrow.svg" alt="down-arrow" />
       </Buttons>
