@@ -33,6 +33,20 @@ function Home() {
         leftBtnTxt="Custom Order"
         rightBtnTxt="Existing Inventory"
       />
+      <Section
+        title="Lowest Cost Solar Panels"
+        description="Money-back guarantee"
+        backgroundImg="solar-roof.jpg"
+        leftBtnTxt="Order now"
+        rightBtnTxt="Learn more"
+      />
+      <Section
+        title="Accessories"
+        description=""
+        backgroundImg="accessories.jpg"
+        leftBtnTxt="Shop now"
+        rightBtnTxt=""
+      />
     </Container>
   );
 }
